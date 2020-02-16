@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Event</title>
+    <script src="ConcepcionLawrencePractice1.js"></script>
+</head>
+<body>
+    <form>
+        <label><b>Event Type:</b></label>&nbsp&emsp;&emsp;&emsp;
+            <select>
+            <option value="0" selected>Choose one</option><option value = "1">A</option><option value ="2">B</option><option value = "3">C</option>
+            </select><br></br>
+
+
+        <label><b>Event Title:&nbsp;&nbsp;&emsp;&emsp;&emsp;</b><input type="text" id="eventTitle" required></label><br></br>
+        <label><b>Event Dates:&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;</b><input type="date" id = "firstDate" required></label>
+        <label><b>to </b><input type ="date" id ="secondDate" required></label><br></br>
+        <label><b>Posting Date:</b> &nbsp;&nbsp;&emsp;&emsp;<input type="date" id = "postingDate" required></label><br></br>
+
+        <br><br>
+        <b>
+        <input type="checkbox" id="checkOne" name="one" onclick>
+        <label for = "one">Is Registration Required?</label><br></br>
+
+        <input type="checkbox" id="checkTwo" onclick>
+        <label>Is the event associated with any Family Programs</label><br></br>
+    
+        <input type="checkbox" id="checkThree" onclick>
+        <label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br></br>
+    
+        <input type="checkbox" id="checkFour" onclick>
+        <label>Is There a point of contact?</label><br></br>
+    
+        <input type="checkbox" id="checkFive" onclick>
+        <label>Is There a Hosting Command Point of Contract?</label><br></br>
+        </b>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type = "submit" value = "Save" onclick="validate()">
+        &emsp;
+        <input type = "submit" value = "Cancel" onclick>
+    </form>
+  <div id="result" style="color:red;"></div> 
+</body>
+</html>
